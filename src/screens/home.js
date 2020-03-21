@@ -5,7 +5,7 @@ import { globalStyles } from '../../styles/global';
 export default function Home({navigation}) {
     const pressHandler = () => {
         navigation.navigate('ReviewDetails');
-    }
+    };
 
     const [reviews, setReviews] = useState([
         { title: 'Zelda, Breath of Fresh Air', rating: 5, body: 'lorem ipsum', key: '1' },
