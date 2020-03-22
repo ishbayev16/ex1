@@ -3,6 +3,7 @@ import Home from '../src/screens/home';
 import ReviewDetails from '../src/screens/reviewDetails';
 import Header from '../shared/header';
 import React from 'react';
+import ImageScreen from '../src/screens/ImageScreen';
 
 const screens = {
   Home: {
@@ -17,6 +18,12 @@ const screens = {
     screen: ReviewDetails,
     navigationOptions: {
       title: 'Review Details',
+    }
+  },
+  ImageScreen: {
+    screen: ImageScreen,
+    navigationOptions:{
+      title: 'Image Screen',
     }
   },
 };

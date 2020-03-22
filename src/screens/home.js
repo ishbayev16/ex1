@@ -4,7 +4,7 @@ import { globalStyles } from '../../styles/global';
 
 export default function Home({navigation}) {
     const pressHandler = () => {
-        navigation.navigate('ReviewDetails');
+        navigation.navigate('ImageScreen');
     }
 
     const [reviews, setReviews] = useState([
@@ -20,9 +20,18 @@ export default function Home({navigation}) {
 
         <Button title="go to review dets" onPress={pressHandler}/> */}
 
+        <Button
+                    title="go to Image screen"
+                    onPress={()=>(navigation.navigate('ImageScreen'))}
+                    // onPress={pressHandler}
+                />
+
+
         <FlatList 
             data={reviews}
             renderItem={({item})=>(
+
+
                 <TouchableOpacity onPress={()=>navigation.navigate('ReviewDetails',item)}>
                     <Text>{item.title}</Text>
                 </TouchableOpacity> 
