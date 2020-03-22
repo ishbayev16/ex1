@@ -4,6 +4,7 @@ import ReviewDetails from '../src/screens/reviewDetails';
 import Header from '../shared/header';
 import React from 'react';
 import ImageScreen from '../src/screens/ImageScreen';
+import CounterScreen from '../src/screens/counterScreen';
 
 const screens = {
   Home: {
@@ -26,6 +27,15 @@ const screens = {
       title: 'Image Screen',
     }
   },
+
+  CounterScreen: {
+    screen: CounterScreen,
+    navigationOptions:{
+      title: 'Counter Screen',
+    }
+  }
+
+
 };
 
 // home stack navigator screens

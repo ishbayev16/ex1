@@ -5,6 +5,7 @@ import { createAppContainer } from 'react-navigation';
 import HomeStack from './homeStack';
 import AboutStack from './aboutStack';
 import ImageScreen from '../src/screens/ImageScreen';
+import CounterScreen from '../src/screens/counterScreen';
 
 // drawer navigation options
 const RootDrawerNavigator = createDrawerNavigator({
@@ -17,6 +18,7 @@ const RootDrawerNavigator = createDrawerNavigator({
   Image:{
     screen: ImageScreen,
   },
+  
 });
 
 export default createAppContainer(RootDrawerNavigator);

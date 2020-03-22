@@ -26,6 +26,12 @@ export default function Home({navigation}) {
                     // onPress={pressHandler}
                 />
 
+        <Button
+                    title="go to Counter screen"
+                    onPress={()=>(navigation.navigate('CounterScreen'))}
+                    // onPress={pressHandler}
+                />
+
 
         <FlatList 
             data={reviews}
