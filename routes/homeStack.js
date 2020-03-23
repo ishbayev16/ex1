@@ -5,6 +5,7 @@ import Header from '../shared/header';
 import React from 'react';
 import ImageScreen from '../src/screens/ImageScreen';
 import CounterScreen from '../src/screens/counterScreen';
+import ScreenLayout from '../src/screens/screenLayout';
 
 const screens = {
   Home: {
@@ -33,8 +34,14 @@ const screens = {
     navigationOptions:{
       title: 'Counter Screen',
     }
-  }
+  },
 
+  ScreenLayout: {
+    screen: ScreenLayout,
+    navigationOptions:{
+      title: 'Layout Screen',
+    }
+  }
 
 };
 
